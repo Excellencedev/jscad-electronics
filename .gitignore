@@ -1,8 +1,7 @@
-.vscode
 node_modules
 .vercel
 cosmos-export
 .aider*
 dist
-.env
 *.diff.*
+config.bat

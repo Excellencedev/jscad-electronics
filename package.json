@@ -19,12 +19,12 @@
     "dist"
   ],
   "scripts": {
-    "start": "cosmos",
-    "build": "tsup --config tsup.config.ts",
+    "start": "node init && cosmos",
+    "build": "node init && tsup --config tsup.config.ts",
     "vercel-build": "bun run build:site",
     "format": "biome format --write .",
     "format:check": "biome format .",
-    "build:site": "cosmos-export",
+    "build:site": "node init && cosmos-export",
     "test:vanilla": "bun run build && node tests/vanilla-smoke.mjs",
     "test": "bun test"
   },
